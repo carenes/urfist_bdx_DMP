@@ -1,0 +1,88 @@
+---
+title: "Rédiger un plan de gestion des données"
+subtitle: "Programme"
+author: "Cécile Arènes"
+date: "5 octobre 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Programme
+
+1.	Quelques rappels sur les données de la recherche
+2.	Le PGD en théorie : définition et modèles
+3.	Le PGD en pratique : guide de rédaction et étude de plans rédigés
+4.	Le PGD en pratique : un retour d’expérience de rédaction
+5.	Boîte à outils : prise en main de DMP OPIDoR
+6.	Valoriser son PGD : introduction aux data papers
+
+# Chemin de fer
+
+| Horaire | Activité |
+| --- | --- |
+| 9h-9h15 | Tour de table et modalités pratiques |
+| 9h15-9h30 | Test : êtes-vous FAIR aware ? |
+| 9h30-10h | Quelques rappels sur les données |
+| 10h-10h20 | Exercice 1 : Comparer des datasets |
+| 10h20-10h45 | Le PGD en théorie : modèles et exemples (2) | 
+| *10h45-11h* | *Pause* |
+| 11h-11h15 | Exercice 2 : comparer des modèles de PGD |
+| 11h15-12h30 | Evolutions à prévoir et data papers |
+| *12h30-13h30h* | *Déjeuner* |
+| 13h30-14h | Retour d'expérience Raphaëlle Bats |
+| 14h-15h | Guide de rédaction et exemples (5) |
+| 15h-15h15 | Exercice : analyse de PGD existants |
+| 15h15-15h45 | Prise en main de DMP OPIDoR |
+| *15h30-15h45* | *Pause* |
+| 15h45-16h45 | Exercice : créer votre plan |
+| 16h45-17h | Evaluation du stage |
+
+
+
+
+## 1.	Quelques rappels sur les données de la recherche
+* Théorie sur les données
+9h15-9h50
+* Exercice 1
+9h50-10h
+
+## 2.	Le PGD en théorie : définition et modèles
+10h-10h30
+
+## Pause
+10h30-10h45
+
+## 2.	Le PGD en théorie : comparaison sur les modèles
+10h45-11h
+
+## 3.	Le PGD en pratique : guide de rédaction
+11h-12h
+
+## 3. Le PGD en pratique : étude de plans rédigés
+14h-14h30
+
+## 4.	Le PGD en pratique : un retour d’expérience de rédaction
+Raphaëlle
+14h30-15h
+
+## 5.	Boîte à outils
+* Prise en main de DMP OPIDoR
+14h30-15h
+* Exercice sur un DMP
+15h-15h30
+
+## Pause
+15h30-15h45
+
+## 6.	Valoriser son PGD : introduction aux data papers
+15h45-16h
+
+## Conclusion
+Tour de table et évalutation de la journée
+16h45-17h
+
+
+

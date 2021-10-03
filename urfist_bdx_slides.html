@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Rédiger un plan de gestion de données</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Cécile Arènes" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Rédiger un plan de gestion de données
+### Cécile Arènes
+### Urfist de Bordeaux
+### 2021-10-05 (dernière mise à jour: 2021-10-03)
+
+---
+
+
+class: middle
+
+# Programme de la journée
+
+## Matin
+1.	Quelques rappels sur les données de la recherche
+2.	Le PGD en théorie : définition et modèles  
+3.  Des évolutions à prévoir : MaDMP et data papers	
+
+## Après-midi
+4.	Le PGD en pratique : un retour d’expérience de rédaction
+5.  Le PGD en pratique : guide de rédaction et étude de plans rédigés
+6.	Boîte à outils : prise en main de DMP OPIDoR
+
+[Support et matériel](àajouter) à télécharger
+
+---
+
+class: middle
+
+# Qui suis-je ?
+
+* Cécile Arènes  &lt;a href="https://orcid.org/0000-0002-1839-3530"&gt;&lt;img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /&gt;&lt;/a&gt;
+* Conservatrice des bibliothèques
+* Chargée de mission Données de la recherche et Humanités numériques à la bibliothèque de Sorbonne Université
+* Membre du GTSO données de Couperin et du collège Données du CoSO
+
+---
+
+class: center, inverse, middle
+
+# Tour de table
+
+---
+
+class: middle
+
+# Vos attentes
+
+* Votre nom
+* Votre fonction 
+* Un souhait pour cette formation
+
+---
+
+class: center, middle
+background-color: #bebebe
+
+# En guise d'introduction 
+
+## Êtes-vous [FAIR-aware](https://doranum.fr/enjeux-benefices/outil-fair-aware/) ?
+
+.center[
+&lt;img src="img/aware.png" width="330" height="296" /&gt;
+]
+
+&lt;small&gt;[Source image](https://commons.wikimedia.org/wiki/File:Van_Damme_Cannes.jpg)&lt;/small&gt;
+
+
+---
+
+class: center, inverse, middle
+
+# 1. Quelques rappels sur les données de la recherche
+
+---
+
+# Le mouvement de l'open data : des initiatives anciennes
+
+* 1992 : [Genbank](https://www.ncbi.nlm.nih.gov/genbank/)
+* 2007 : travaux sur l’[Open government data à l’initiative](https://opengovdata.org/) de Lawrence  Lessig,  Tim  O’Reilly,  Ethan  Zuckermann,  Joseph  Hall,  Aaron  Schwartz et Carl Mamamud
+
+.center[
+&lt;img src="img/lessigetc.png" width="1020" height="182" /&gt;
+]
+
+**Principes : accessibilité, données non-propriétaires, licences ouvertes, etc.**  
+
+&amp;nbsp;	
+
+&lt;small&gt;Images : Silvio Tanaka, « Tim Berners-Lee, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Tim_Berners-Lee_CP.jpg &lt;/small&gt;
+&lt;small&gt;Lessig 2016, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Lawrence_Lessig_Headshot.jpg&lt;/small&gt; 
+&lt;small&gt;Christopher Michel, “Tim O’Reilly”, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Tim_O%27Reilly_-_2017_(38700700672)_(cropped).jpg&lt;/small&gt; 
+&lt;small&gt;Sage Ross, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Aaron_Swartz_2_at_Boston_Wikipedia_Meetup,_2009-08-18.jpg&lt;/small&gt; 
+&lt;small&gt;David Orban, CC:BY, Open Government Working Group, https://www.flickr.com/photos/davidorban/2095565103/in/album-72157603410393877/&lt;/small&gt;
+
+
+---
+
+# Le mouvement de l'open data : du côté du web
+
+[Echelle 5 étoiles](https://5stardata.info/fr/), Tim Berners-Lee, 2006
+
+- ★ publiez vos données sur le Web (peu importe leur format) avec une licence ouverte
+- ★★ publiez-les en tant que données structurées (par exemple, un document Excel au lieu d’une image scannée d’un tableau)
+- ★★★ publiez-les dans un format ouvert et non-propriétaire (par exemple, 
+un CSV plutôt qu’un Excel)
+- ★★★★ utilisez des URI pour désigner des choses dans vos données, 
+afin que les gens puissent faire des références à celles-ci
+- ★★★★★ liez vos données à d’autres données 
+pour y ajouter du contexte
+
+
+.center[
+&lt;img src="img/echelle5etoiles.png" width="350" height="150" /&gt;
+]
+
+
+---
+
+# Ouvrir les données, un enjeu économique 
+
+.pull-left[
+&lt;img src="img/ocde.png" width="300" height="400" /&gt;
+]
+
+.pull-right[
+2007 : Parution du rapport de l’OCDE, « Principes et lignes directrices de l’OCDE pour l’accès aux données de la recherche financée sur fonds publics ». http://www.oecd.org/fr/science/inno/38500823.pdf 
+]
+
+
+
+
+---
+
+# Le mouvement de l'open data : répondre à une attente citoyenne
+
+* [Open government partnership](https://www.opengovpartnership.org/), 2011, 78 pays
+* « OGP’s vision is that more governments become sustainably more transparent, more accountable, and more responsive to their own citizens, with the ultimate goal of improving the quality of governance, as well as the quality of services that citizens receive. »
+
+.center[![](./img/opengov.png)]
+
+
+---
+
+# Le mouvement de l'open data : en France
+
+* Ouverture de [data.gouv.fr](https://www.data.gouv.fr/fr/) en 2011
+* Création de la mission interministérielle [Etalab](https://www.etalab.gouv.fr/qui-sommes-nous) en 2013 
+* Pour une action publique transparente et collaborative : plan d’action national pour la France, 2015-2017, puis 2018-2020
+  * 21 engagements : engagement 18 : « Construire un écosystème de la science ouverte »
+* **Partenariat pour un gouvernement ouvert** [2021-2023](https://www.modernisation.gouv.fr/transformer-laction-publique/partenariat-pour-un-gouvernement-ouvert)
+
+.center[![](./img/datagouv.png)]
+
+---
+
+# La feuille de route du MESRI pour les données et les codes
+
+.pull-left[
+&lt;img src="img/amdacMESRI.png" width="300" height="400" /&gt;
+]
+
+.pull-right[
+[Politique des données, des algorithmes et des codes sources](https://cache.media.enseignementsup-recherche.gouv.fr/file/politique_des_donnees/50/1/Strategie-donnees-algorithmes-codes-210922_1419501.pdf), 2021-2024.
+
+* Structurer, ouvrir et partager les données de recherche - Action 6
+* Suivre l'ouverture des données et des codes de la recherche : Baromètre de la science ouverte - Action 7 
+* Accompagner les chercheurs dans la gestion des données et le « FAIR by design » - Action 9
+* Collecter, préserver et partager les codes sources – Software Heritage - Action 11
+* Accélérer les demandes d'accès des chercheurs aux données publiques - Actions 18 &amp; 9 
+* Favoriser l'accès des chercheurs aux données d'intérêt général-  Action 20
+* Mettre en place des identifiants uniques et pérennes - Actions 22 à 27
+* Accompagner l’adoption de licences libres - Action 45
+]
+
+---
+
+# La science ouverte en France
+
+* Plan national pour la science ouverte, 2018 et 2021.
+* « La France s’engage pour que les résultats de la recherche scientifique soient ouverts à tous, chercheurs, entreprises et citoyens, sans entrave, sans délai, sans paiement. »
+
+.center[
+&lt;img src="img/pnso2.png" width="250" height="300" /&gt;
+]
+
+
+---
+
+# Le plan national pour la science ouverte 1, 2018
+
+.center[
+&lt;img src="img/pnso1.jpg" width="200" height="250" /&gt;
+]
+
+**Axe 2, structurer et ouvrir les données de la recherche**
+* Rendre obligatoire la diffusion ouverte des données de recherche issues de programmes financés par appels à projets sur fonds publics.
+* Créer la fonction d’administrateur des données et le réseau associé au sein des établissements.
+* Créer les conditions et promouvoir l’adoption d’une politique de données ouvertes associées aux articles publiés par les chercheurs.
+  
+  
+---
+
+class:middle
+
+# Le plan national pour la science ouverte 2, 2021
+
+
+**Axe 2 : structurer, partager et ouvrir les données de la recherche**
+* Mettre en œuvre l’obligation de diffusion des données de recherche financées sur fonds publics
+* Créer Recherche Data Gouv, la plateforme nationale fédérée des données de recherche
+* Promouvoir l’adoption d’une politique de données sur l’ensemble du cycle des données de la recherche, pour les rendre faciles à trouver, accessibles, intéropérables et réutilisables (FAIR)
+
+**Axe 3 : ouvrir et promouvoir les codes sources produits par la recherche**
+* Valoriser et soutenir la diffusion sous licence libre des codes sources issus de recherches financées sur fonds publics
+* Mettre en valeur la production des codes sources de l’enseignement supérieur, de la recherche et de l’innovation
+* Définir et promouvoir une politique en matière de logiciels libres
+
+---
+
+class: middle
+
+# Quels bénéfices pour le producteur de données ?
+
+* Une **conformité** avec les exigences des financeurs en faveur de la science ouverte
+* Davantage de **transparence** dans le processus de recherche
+* Une meilleure **visibilité** pour les chercheurs
+* Davantage d’**impact** potentiel de la recherche
+* Une plus grande **efficacité** (et un meilleur gestion des coûts de gestion)
+* De meilleures possibilités de **collaboration**
+* Davantage de **citations** :
+  * Colavizza, Giovanni, Iain Hrynaszkiewicz, Isla Staden, Kirstie Whitaker, et Barbara McGillivray. 2020. « The citation advantage of linking publications to research data ». PLOS ONE 15 (4): e0230416. https://doi.org/10.1371/journal.pone.0230416.
+
+
+---
+
+class: middle
+
+# Les données de la recherche : définitions - 1
+
+&gt;"Enregistrements factuels (chiffres, textes, images et sons) qui sont utilisés comme sources principales pour la recherche scientifique et sont généralement reconnus par la communauté scientifique comme nécessaires pour valider des résultats de recherche."
+
+OECD. 2007. « OECD Principles and Guidelines for Access to Research Data from Public Funding ». https://www.oecd.org/sti/inno/38500813.pdf.
+
+---
+
+# Les données de la recherche : définitions - 2
+
+&gt;« Research data means data in the form of facts, observations, images, computer program results, recordings, measurements or experiences on which an argument, theory, test or hypothesis, or another research output is based. 
+Data may be numerical, descriptive, visual or tactile. It may be raw, cleaned or processed, and may be held in any format or media. »
+
+DANS, « What Is Research Data », 2017. https://www.ands.org.au/__data/assets/pdf_file/0006/731823/Whatis-research-data.pdf 
+
+.center[
+&lt;img src="img/types-donnees.png" width="600" height="300" /&gt;
+]
+
+---
+
+
+# Différents types de données - 1
+
+* **Données d’observation** capturées en temps réel : habituellement uniques, impossible à  reproduire
+  * *Ex.: mesures sismiques, images d’une étoile,  enquêtes sociologiques, fouilles archéologiques…*
+
+* **Données d’expérimentation** : obtenues à partir d’équipements de laboratoire
+souvent reproductibles, parfois coûteuses
+  * *Ex.: résultats de réactions chimiques,  observations sur des individus en situation de test…*
+
+* **Données computationnelles** : générées par des modèles informatiques
+souvent reproductibles si le modèle est  correctement documenté
+  * *Ex.: modélisation du changement climatique, « reproduction » du  Big Bang, modèles économiques…*
+
+&amp;nbsp;
+
+&lt;small&gt;Source : Ancelin-Fabre, Justine. 2021. « Rédiger un plan de gestion pour ses données de recherche ». https://urfist.chartes.psl.eu/sites/default/files/docs/20210601_ancelin-fabre_pgd.pdf.&lt;/small&gt;
+
+---
+
+# Différents types de données - 2
+
+* **Records** (C. Borgman) : documents témoignant d’un phénomène ou  d’une activité humaine, uniques ou non (=&gt; "traces" dans la traduction française)
+  * *Ex.: fonds de photographies, documents d’archives, textes de loi,  ouvrages littéraires…*
+
+* **Données compilées ou dérivées** : issues du traitement de données brutes
+souvent reproductibles mais coûteuses
+  * *Ex.: bases de données compilées, corpus textuel préparé pour le  TDM…*
+
+* **Données « de référence »** : validées par la communauté, réutilisables
+  * *Ex.: décodage du génome humain, certaines données astronomiques…*
+
+&amp;nbsp;
+
+&lt;small&gt;Source : Ancelin-Fabre, Justine. 2021. « Rédiger un plan de gestion pour ses données de recherche ». https://urfist.chartes.psl.eu/sites/default/files/docs/20210601_ancelin-fabre_pgd.pdf.&lt;/small&gt;
+
+
+---
+
+class: middle
+
+# Cerner le périmètre des données
+
+Dans le cadre du plan de gestion des données, *on ne prendra pas en compte ces productions* : 
+
+* Analyses préliminaires et projets de documents scientifique
+* Programmes de travaux futurs
+* Examens par les pairs
+* Communications personnelles avec des collègues
+* Objets matériels
+* **Publications scientifiques**
+* Supports de formations
+* Données administratives
+
+*Attention, elles constituent des archives et certaines sont à conserver de façon pérenne.* (voir : Référentiel de gestion des archives de la recherche)
+
+---
+
+# Le cycle de vie des données - 1
+
+*Un peu trop parfait pour être vrai...*
+
+.center[
+&lt;img src="img/datalifecycle.png" width="500" height="400" /&gt;
+]
+
+
+---
+
+# Le cycle de vie des données - 2
+
+*Plus souvent itératif*
+
+.center[
+&lt;img src="img/datalifecycle2.png" width="600" height="400" /&gt;
+]
+
+
+---
+
+class: middle
+
+# Pourquoi ouvrir les données ? 
+
+* 50 % des expériences sont considérées comme **non-reproductibles**. 
+* 80 % des données produites ces 20 dernières années seraient **perdues**.
+* 93 % des établissements d’enseignement supérieur n’ont pas de démarche de plan de gestion des données de la recherche.
+* 90 % des chercheurs interrogés dans le cadre d’un sondage européen disent effectuer de manière individuelle le stockage, l’archivage ou la transmission de leurs données.
+* 33 % de ces mêmes chercheurs n’ont jamais entendu parler des plans de gestion de données ou estiment qu’ils n’en ont pas besoin. 
+* Plus de 80 % des données produites sont **stockées ailleurs que dans des entrepôts**. 
+
+&amp;nbsp;
+
+*DATACC. « Gestion des données : une nouvelle exigence, de nouvelles compétences », 2020.* https://www.datacc.org/bonnes-pratiques/adopter-un-plan-de-gestion-des-donnees/gestion-des-donnees-une-nouvelle-exigence-de-nouvelles-competences/
+
+---
+
+class: middle
+
+# Cadre européen de l'ouverture des données - 1
+
+[Directive européenne sur les données ouvertes et la réutilisation des informations du secteur public](https://eur-lex.europa.eu/eli/dir/2019/1024/oj/eng), juin 2019 (2019/1024)
+
+&gt;« Les informations du secteur public constituent une **source extraordinaire de données qui peuvent contribuer à améliorer le marché intérieur** et à développer de nouvelles applications pour les consommateurs et les personnes morales. L'utilisation intelligente de données, y compris leur traitement par des applications utilisant l'intelligence artificielle, peut avoir un **effet de transformation sur tous les secteurs de l'économie**. » (considérant 9)
+
+---
+
+class: middle
+
+# Cadre européen de l'ouverture des données - 2
+
+[Une stratégie européenne pour les données, communication de la commission au parlement](https://ec.europa.eu/info/sites/default/files/communication-european-strategy-data-19feb2020_fr.pdf), février 2020 (COM(2020) 66 final)
+
+&gt; «  Outre la création de **neuf espaces européens communs des données**, les travaux se poursuivront sur le nuage européen pour la science ouverte (**EOSC**), qui offre un **accès ininterrompu et une réutilisation fiable des données de la recherche aux chercheurs européens, aux innovateurs, aux entreprises et aux citoyens**, grâce à un environnement distribué des données fiable et ouvert et à des services connexes. »
+
+Ouverture d’EOSC au secteur privé à partir de 2024
+
+---
+
+# Cadre juridique français de l'ouverture des données
+
+.pull-left[
+&lt;img src="img/guidejuridique.png" width="300" height="400" /&gt;
+]
+
+.pull-right[
+Ouverture des données de la recherche. Guide d'analyse du cadre juridique en France. 2017. 
+https://www.ouvrirlascience.fr/wp-content/uploads/2018/11/Guide_Juridique_V2.pdf 
+]
+
+---
+
+# Loi pour une République numérique, 2016 - 1
+
+.center[
+&lt;img src="img/LPRN.png" width="100" height="100" /&gt;
+]
+
+**Titre Ier : la circulation des données et du savoir : article 6**
+
+Les administrations publient en ligne les documents administratifs suivants :
+&gt;« 1° Les documents qu'elles communiquent en application des procédures prévues au présent titre, ainsi que leurs versions mises à jour ;
+
+&gt;[...]
+
+&gt;« 3° Les bases de données, mises à jour de façon régulière, qu'elles produisent ou qu'elles reçoivent et qui ne font pas l'objet d'une diffusion publique par ailleurs ;
+
+&gt;« 4° Les **données, mises à jour de façon régulière, dont la publication présente un intérêt économique, social, sanitaire ou environnemental**.
+
+
+---
+
+# Loi pour une République numérique, 2016 - 2
+
+.center[
+&lt;img src="img/LPRN.png" width="100" height="100" /&gt;
+]
+
+**Open research data : article 30**
+
+&gt;« II.- Dès lors que les données issues d'une activité de recherche **financée au moins pour moitié** par des dotations de l'Etat, des collectivités territoriales, des établissements publics, des subventions d'agences de financement nationales ou par des fonds de l'Union européenne ne sont pas protégées par un droit spécifique ou une réglementation particulière et qu'elles ont été rendues publiques par le chercheur, l'établissement ou l'organisme de recherche, **leur réutilisation est libre**.
+
+&gt;« III.- L'éditeur d'un écrit scientifique mentionné au I ne peut limiter la réutilisation des données de la recherche rendues publiques dans le cadre de sa publication.
+
+
+---
+
+class: middle
+
+# Cadre juridique
+
+✅   Open data : **principe de communication et de réutilisation libre et gratuite**
+
+* En Europe : Directive PSI
+* En France : 
+  * Lois CADA, Valter et loi pour une République numérique
+  * Code des relations entre le public et l’administration
+
+En pratique, tout dépend du type de données :
+
+* ✅   Communication **obligatoire**
+  * Directive INSPIRE : géographie
+  * Convention d’Aarhus : environnement
+  
+---
+
+# Cadre juridique
+
+🔴   Communication **interdite** des données portant atteinte :
+
+* A la défense et la politique étrangère de la France, aux délibérations du gouvernement, au pouvoir exécutif
+* A la sûreté de l’État, la sécurité publique, à la sécurité des personnes , à la sécurité des biens de l’établissement et de ses systèmes d’informations
+* Au secret professionnel (médical, etc.)
+* Au secret industriel et commercial
+
+🔶   Communication possible **sous conditions** de données :
+
+* Protégées par le droit d’auteur ou autres droits de propriété intellectuelle
+* Relatives à des personnes privées (données personnelles, vie privée)
+* Soumises au secret statistique
+* Liées à un contrat avec un tiers non soumis à une obligation de service public
+* Présentant des risques pour la protection du potentiel scientifique et technique de la nation (« unité protégée » ou « Zone à régime restrictif »)
+
+
+---
+
+# Propriété intellectuelle
+
+### Les données sont-elles protégées par le droit d’auteur ?
+
+* ✅   **Oui** pour les « œuvres » même sans caractère artistique, si elles présentent un degré minimal d’« originalité »: textes, discours, photos, vidéos, musique, cartes, sculptures…
+* ✅   **Oui** pour le code informatique
+* 🔴   **Non** pour des informations purement factuelles (mesures, comptages…)
+* 🔴   **Non** pour les œuvres tombées dans le domaine public (pour être précis il reste un droit moral, inaliénable)
+
+*Le fait que la collecte des données ait demandé un investissement (humain, matériel, financier) n’est pas créateur de droit d’auteur.*
+
+### Autres droits de propriété intellectuelle :
+
+* Marques, dessins, modèles
+* Brevets, éléments brevetés
+* Droits des bases de données
+
+
+---
+
+class: middle
+
+# Principes d'ouverture des données
+
+*« As open as possible, as closed as necessary. »*
+
+**Un principe d’ouverture par défaut ;
+Des limitations en fonction du type de données.**
+
+Mise en œuvre : production de données **FAIR**
+
+.center[
+&lt;img src="img/FAIR1.jpg" width="600" height="200" /&gt;
+]
+
+.center[
+&lt;small&gt;Logo FAIR : [SangyaPundir](https://commons.wikimedia.org/wiki/File:FAIR_data_principles.jpg). CC:BY-SA4.0.&lt;/small&gt;
+]
+
+---
+
+# Principes FAIR
+
+.center[
+&lt;img src="img/FAIR2.png" width="550" height="350" /&gt;
+
+Détail des principes FAIR : https://www.force11.org/group/fairgroup/fairprinciples 
+
+&lt;small&gt;Image : [ANDS](https://www.ands.org.au/working-with-data/fairdata/training). CC:BY4.0.&lt;/small&gt;
+]
+
+---
+
+# Données FAIR et données ouvertes
+
+.center[
+&lt;img src="img/openvsfair.jpg" width="550" height="350" /&gt;
+]
+
+Mons B, NeylonC,VelteropJ, Dumontier M, da Silva Santos LOB, Wilkinson MD. Cloudy, increasingly FAIR; revisiting the FAIR Data guiding principles for the European Open Science Cloud. Information Services &amp; Use. 2017;37(1):49‑56.
+https://doi.org/10.3233/ISU-170824
+
+
+---
+
+background-color: #bebebe
+
+# Pourquoi décrire et documenter des jeux de données ? - 1
+
+## Exercice 1
+
+*Voici des jeux de données déposés sur Zenodo. Lesquels êtes-vous en mesure de décrire ? Lesquels pourriez-vous réutiliser ?*
+
+15 minutes, en groupes
+
+* https://dropsu.sorbonne-universite.fr/s/ptX4EZNf9mH4T6e
+
+* Lien de secours : https://docs.google.com/document/d/16O7ZXr7afTbaMdUceLIToVwCLa7IkyW8aKsvDgrGmx4/edit?usp=sharing
+
+
+---
+
+background-color: #bebebe
+
+# Pourquoi décrire et documenter des jeux de données ? - 2
+
+## Exercice 1 - suite
+
+Trois jeux particulièrement contrastés
+
+* Lomazzi, Vera. (2017). Supplementary materials for "Testing the goodness of the EVS gender role attitudes scale" [Data set]. Bulletin of Sociological * Methodology/Bulletin de Méthodologie Sociologique. Zenodo. http://doi.org/10.5281/zenodo.375612
+* Biswas, Rahul, Cinabro, David, &amp; Kessler, Rick. (2018). simlib_minion (Version 2) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1145822
+* Macario, A. (2013). Swath Bathymetry Pitman fracture zone [Data set]. Zenodo. http://doi.org/10.5281/zenodo.7515 
+
+
+---
+
+class: center, inverse, middle
+
+# 2.	Le PGD en théorie : définition et modèles
+
+---
+
+class: middle
+
+# Le PGD en quelques dates
+
+* 1966 : esquisses de DMP dans le domaine de l’aéronautique
+* 1973 : la NASA publie un rapport technique qui s’apparente à un DMP.
+* 2007 : le Wellcome trust (Royaume-Uni), aujourd’hui membre du Plan S, requiert la mise en place de DMP pour les projets qu’il finance
+* 2007 : lignes directrices de l’OCDE
+* 2011 : mise en place de DMP par la National Science Foundation (Etats-Unis) pour les projets financés.
+* 2014 : DMP pour les projets financés dans le cadre de H2020
+* 2019 : l’ANR requiert la mise en place de DMP pour les projets qu’elle finance
+
+&amp;nbsp;
+
+Sources :
+* DATACC. « Gestion des données : une nouvelle exigence, de nouvelles compétences », 2020. https://www.datacc.org/bonnes-pratiques/adopter-un-plan-de-gestion-des-donnees/gestion-des-donnees-une-nouvelle-exigence-de-nouvelles-competences/.
+* Chronologie inspirée de : Smale, Nicholas, et al. « The History, Advocacy and Efficacy of Data Management Plans ». BioRxiv, octobre 2018. www.biorxiv.org, https://doi.org/10.1101/443499
+
+
+---
+
+class: middle
+
+# Le plan de gestion des données : définition
+
+&gt;Un document synthétique qui aide à organiser et anticiper toutes les étapes du cycle de vie de la donnée. Il explique pour chaque jeu de données comment seront gérées les données d’un projet, depuis leur création ou collecte jusqu’à leur partage et leur archivage.
+
+Source : INIST-CNRS, [doranum](https://doranum.fr/plan-gestion-donnees-dmp/fiche-synthetique/)
+
+Le DMP est un document **évolutif**, demandé, en général, à **trois moments** du projet.
+
+
+---
+
+# Le plan de gestion des données en bref
+
+.center[
+&lt;img src="img/dmpboxes.png" width="800" height="450" /&gt;
+]
+
+Source :  Cocaud, Sylvie, et Dominique l’Hostis. “Pourquoi et comment rédiger un plan de gestion de données ?,” 2019. https://hal.inrae.fr/hal-02791507
+
+
+---
+
+class:middle
+
+# Exigences des financeurs de la recherche pour les PGD
+
+**ANR :** 
+* DMP obligatoire pour tout projet
+* Pas d’obligation d’ouverture des données
+
+**Europe, Horizon Europe :** 
+* DMP obligatoire pour tout projet
+* Gestion des données FAIR
+* Ouverture des données si leur régime juridique le permet
+
+*Europe, H2020 :*
+* *Si pilote, DMP obligatoire pour tout projet*
+* *Si pilote, ouverture des données si leur régime juridique le permet*
+
+
+---
+
+class: middle
+
+# Le modèle de l'ANR - présentation
+
+[Modèle](https://anr.fr/fileadmin/documents/2019/ANR-modele-PGD.pdf) suivant le cycle de vie des données
+
+Informations générales
+1. **Description** des données et collecte ou réutilisation des données
+2. **Documentation** et qualité des données
+3. **Stockage** et sauvegarde pendant le processus de recherche
+4. Exigences légales et **éthiques**, codes de conduite
+5. **Partage** des données et conservation à long terme
+6. Responsabilités et **ressources** en matière de gestion de données
+
+
+---
+
+# Le modèle de l'ANR - Description et documentation
+
+- Informations générales
+- Renseignements administratifs
+- **1. Description des données et collecte ou réutilisation de données**
+  - 1a. Comment de **nouvelles données** seront-elles recueillies ou produites et/ou comment des données préexistantes seront-elles réutilisées ?
+  - 1b. Quelles données (**types, formats et volumes** par ex.) seront collectées ou produites ?
+
+- **2. Documentation et qualité des données**
+  - 2a. Quelles **métadonnées** et quelle **documentation** (par exemple méthodologie de collecte et mode d'organisation des données) accompagneront les données ?
+  - 2b. Quelles mesures de contrôle de la **qualité** des données seront mises en œuvre ? 	
+
+
+---
+
+# Le modèle de l'ANR - Stockage et exigences légales
+
+- **3. Stockage et sauvegarde pendant le processus de recherche**
+  - 3a. Comment les données et les métadonnées seront-elles **stockées** et **sauvegardées** tout au long du processus de recherche ?
+  - 3b. Comment la **sécurité** des données et la protection des données **sensibles** seront-elles assurées tout au long du processus de recherche ? 
+  
+- **4. Exigences légales et éthiques, codes de conduite**
+  - 4a. Si des données à **caractère personnel** sont traitées, comment le respect des dispositions de la législation sur les données à caractère personnel et sur la sécurité des données sera-t-il assuré ?
+  - 4b. Comment les autres questions juridiques, comme la titularité ou les droits de **propriété intellectuelle** sur les données, seront-elles abordées ? Quelle est la législation applicable en la matière ? 
+  - 4c. Comment les éventuelles **questions éthiques** seront-elles prises en compte, les codes déontologiques respectés ?
+
+
+---
+
+# Le modèle de l'ANR - Partage et responsabilités
+
+- **5. Partage des données et conservation à long terme**
+  - 5a. **Comment et quand** les données seront-elles partagées ? Y-a-t-il des restrictions au partage des données ou des raisons de définir un **embargo** ?
+  - 5b. Comment les données à conserver seront-elles sélectionnées et où seront-elles **préservées** sur le long terme (par ex. un entrepôt de données ou une archive) ? 
+  - 5c. Quelles **méthodes** ou quels outils **logiciels** seront nécessaires pour accéder et utiliser les données ?
+  - 5d. Comment l'attribution d'un **identifiant** unique et pérenne (comme le DOI) sera-t-elle assurée pour chaque jeu de données ?
+
+- **6. Responsabilités et ressources en matière de gestion des données**
+  - 6a. **Qui** (par exemple rôle, position et institution de rattachement) sera responsable de la gestion des données (c'est-à-dire le gestionnaire des données) ?
+  - 6b. Quelles seront les **ressources** (budget et temps alloués) dédiées à la gestion des données permettant de s'assurer que les données seront FAIR (Facile à trouver, Accessible, Interopérable, Réutilisable) 
+  
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Le modèle de l'ANR - un exemple
+
+LipInTB / Jean-François Cavalier. 2021. https://dmp.opidor.fr/plans/4624/export.pdf
+
+&amp;nbsp;
+
+**Exercice** : lisez ce PGD au regard des questions du modèle de l'ANR, qu'en pensez vous ?
+https://anr.fr/fileadmin/documents/2019/ANR-modele-PGD.pdf 
+
+
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Data Summary
+
+## 1.	Data Summary
+
+* Will you **re-use** any existing data and what will you re-use it for? State the reasons if re-use of any existing data has been considered but discarded.
+* What **types and formats** of data will the project generate or re-use?
+* What is the **purpose** of the data generation or re-use and its relation to the objectives of the project?
+* What is the **expected size** of the data that you intend to generate or re-use?
+* What is the **origin/provenance** of the data, either generated or re-used?
+* To whom might your data be useful (**'data utility'**), outside your project?
+
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Fair data : Findable
+
+
+## 2.	FAIR data
+
+### 2.1.	Making data **findable**, including provisions for metadata
+* Will data be identified by a **persistent identifier**?
+* Will **rich metadata** be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.
+* Will search **keywords** be provided in the metadata to optimize the possibility for discovery and then potential re-use?
+* Will metadata be offered in such a way that it can be harvested and indexed? 
+
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Fair data : Accessible - 1 
+
+### 2.2.	Making data **accessible** : **Repository**
+
+  * Will the data be deposited in a **trusted repository**?
+  * Have you explored appropriate arrangements with the identified repository where your data will be deposited? 
+  * Does the repository ensure that the data is assigned an **identifier**? Will the repository resolve the identifier to a digital object? 
+
+
+---
+
+# Le modèle Horizon Europe - Fair data : Accessible - 2
+
+### 2.2.	Making data **accessible** : **Data**
+* Will all data be made **openly available**? If certain datasets cannot be shared (or need to be shared under restricted access conditions), explain why, clearly separating **legal and contractual reasons from intentional restrictions**. Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed if opening their data goes against their legitimate interests or other constraints as per the Grant Agreement.
+* If an **embargo** is applied to give time to publish or seek protection of the intellectual property (e.g. patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.
+* Will the data be accessible through a **free and standardized access protocol**?
+* If there are **restrictions** on use, how will access be provided to the data, both during and after the end of the project?
+* How will the identity of the person accessing the data be ascertained?
+* Is there a need for a **data access committee** (e.g. to evaluate/approve access requests to personal/sensitive data)?
+  
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Fair data : Accessible - 3
+
+### 2.2.	Making data **accessible** : **Metadata**
+  * Will **metadata** be made openly available and licenced under a public domain dedication **CC0**, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?
+  * How long will the data remain **available and findable**? Will metadata be guaranteed to remain available after data is no longer available?
+  * Will **documentation or reference** about any software be needed to access or read the data be included? Will it be possible to include the relevant software (e.g. in open source code)?
+
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Fair data : Interopérable
+
+### 2.3.	Making data **interoperable**
+
+* What data and metadata **vocabularies, standards, formats or methodologies** will you follow to make your data interoperable to allow data exchange and re-use within and across disciplines? Will you follow community-endorsed interoperability best practices? Which ones? 
+* In case it is unavoidable that you use uncommon or generate project **specific ontologies or vocabularies**, will you provide mappings to more commonly used ontologies? Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?
+* Will your data include **qualified references to other data** (e.g. other data from your project, or datasets from previous research)?
+
+---
+
+# Le modèle Horizon Europe - Fair data : Réutilisable
+
+### 2.4.	Increase data **re-use**
+
+* How will you provide **documentation needed to validate data analysis and facilitate data re-use** (e.g. **readme files** with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?
+* Will your data be made **freely available** in the public domain to permit the widest re-use possible? Will your data be licensed using standard reuse licenses, in line with the obligations set out in the Grant Agreement?
+* Will the data produced in the project be **useable** by third parties, in particular after the end of the project?
+* Will the **provenance** of the data be thoroughly documented using the appropriate standards?
+* Describe all relevant data **quality assurance processes**.
+* Further to the FAIR principles, DMPs should also address **research outputs** other than data, and should carefully consider aspects related to the allocation of resources, data security and ethical aspects.
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Autres résultats de recherche
+
+## 3.	Other research outputs
+* In addition to the management of data, beneficiaries should also consider and plan for the management of **other research outputs** that may be generated or re-used throughout their projects. Such outputs can be either digital (e.g. **software, workflows, protocols, models**, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).
+* Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.
+
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Coûts
+
+## 4.	Allocation of resources
+* What will the **costs** be for making data or other research outputs FAIR in your project (e.g. direct and indirect costs related to storage, archiving, re-use, security, etc.) ?
+* How will these be covered? Note that costs related to research data/output management are eligible as part of the Horizon Europe grant (if compliant with the Grant Agreement conditions)
+* Who will be **responsible** for data management in your project?
+* How will **long term preservation** be ensured? Discuss the necessary resources to accomplish this (costs and potential value, who decides and how, what data will be kept and for how long)?
+
+
+---
+
+class: middle
+
+# Le modèle Horizon Europe - Sécurité
+
+## 5.	Data security
+* What provisions are or will be in place for **data security** (including data recovery as well as secure storage/archiving and transfer of sensitive data)?
+* Will the data be safely stored in **trusted repositories** for long term preservation and curation?
+
+
+---
+
+# Le modèle Horizon Europe - Ethique, Autres
+
+## 6.	Ethics
+* Are there, or could there be, any **ethics or legal issues** that can have an impact on data sharing? These can also be discussed in the context of the ethics review. If relevant, include references to ethics deliverables and ethics chapter in the Description of the Action (DoA).
+* Will informed consent for data sharing and long term preservation be included in questionnaires dealing with **personal data**?
+
+## 7.	Other issues
+* Do you, or will you, make use of other **national/funder/sectorial/departmental procedures** for data management? If yes, which ones (please list and briefly describe them)?
+
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Le modèle Horizon Europe - Un exemple
+
+Gianluca Brunori. (2020). Data Management Plan. Zenodo. 
+https://doi.org/10.5281/zenodo.3664215
+
+&amp;nbsp;
+
+*NB : la structure est la même, mais les questions du modèle sont encore celles de H2020.*
+
+---
+
+# Tableau synoptique des modèles ANR et Horizon Europe
+
+.center[
+&lt;img src="img/comparatifDMP.png" width="800" height="400" /&gt;
+]
+
+À retrouver sur : [lien à faire](lien à faire)
+
+---
+
+class: middle
+
+# Codes et logiciels : plans de gestion des données
+
+* **Modèles :**
+  * PRESOFT projet: Plan de Gestion de Logiciel de la Recherche (Projet PRESOFT) https://dmp.opidor.fr/template_export/1241559633.pdf
+  * Software Sustainability Institut: SSI Software Management Plan - Minimal Software Management Plan https://dmp.opidor.fr/template_export/4910541.pdf
+
+* **Principes FAIR pour les codes et logiciels :**
+  * Lamprecht, Anna-Lena, LeylaGarcia, MateuszKuzak, Carlos Martinez, Ricardo Arcila, Eva Martin Del Pico, Victoria DominguezDel Angel, et al. «TowardsFAIR Principlesfor ResearchSoftware». Data Science3, no1 (1 janvier 2020): 37-59. https://doi.org/10.3233/DS-190026.
+
+---
+
+# Différents modèles de PGD
+
+Consulter les [modèles](https://dmp.opidor.fr/public_templates) sur DMP OPIDoR
+
+* **Financements européens :** 
+  * Horizon Europe, (H2020)
+  * ERC
+* **Financeurs français :** 
+  * ANR
+  * INCa
+* **Etablissements :** 
+  * Institut Pasteur
+  * CEA
+  * INRAE
+  * Université de Strasbourg
+* **Disciplinaires (unités, consortium, projets)**
+  * ICM
+  * MASA
+  * PRESOFT project
+  * PRODIG UMR
+
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Comparez les modèles de PGD
+
+## Exercice 2
+
+*Sur le site DMP OPIDoR, choisissez trois [modèles](https://dmp.opidor.fr/public_templates) de PGD et observez leurs différences. Lesquels vous paraissent aisés à utiliser, pourquoi ? Certains vous semblent-ils particulièrement complexes, pourquoi ?*
+
+15 minutes, en groupes
+
+---
+
+class: center, inverse, middle
+
+# 2. Plans de gestion des données : des évolutions à prévoir
+
+
+---
+
+class: middle
+
+# En LaTeX et en Rmd
+
+* Deux modèles en cours d’adaptation : 
+  * Un modèle adapté de celui de l’ANR
+  * Un modèle adapté de celui de H2020
+* [Work in progress](https://github.com/carenes/DMP_templates)…
+
+
+---
+
+class: middle
+
+# Les MaDMP 
+
+* Vers des DMP actionnables par des machines
+* Exemple d’[Argos](https://argos.openaire.eu/) d’OpenAIRE : outil d’aide à la rédaction de MaDMP
+* Un MaDMP en préparation pour DMP OPIDoR
+* Voir les travaux du groupe RDA : [DMP Common Standards WG](https://www.rd-alliance.org/group/dmp-common-standards-wg/outcomes/rda-dmp-common-standard-machine-actionable-data-management)
+
+
+---
+
+class: center, inverse, middle
+
+# 3. Les data papers
+
+
+---
+
+# Le data paper : objectif
+
+### Quoi ?
+* Article décrivant un jeu de données, notamment les méthodes de recueil
+* Détaille les potentiels de réutilisation de données
+* Les articles font l’objet d’un peer-reviewing
+
+### Comment ? 
+* Le PGD peut servir de trame
+* Il peut être publié dans une revue académique classique, plus souvent publié dans un data journal
+
+###  Pourquoi ?
+*  Informer la communauté scientifique de la disponibilité de ces jeux de données et de leur potentiel pour des utilisations futures
+* Montrer l’originalité et la portée du jeu de données décrit
+
+---
+
+# Le data paper : trame
+
+La particularité du texte d’un data paper porte sur la description fine à la fois de la méthode de production des données et des données elles-mêmes, ainsi que sur l’absence de résultat et discussion : 
+* **contexte** de la recherche et travaux antérieurs dans lesquels celle-ci s’inscrit, apport des données dans ce contexte et potentiel de réutilisation ;
+* **protocole** de production des données : qualification du producteur des données, méthode de constitution de l’échantillon, matériel utilisé, procédures de traitement, mise en œuvre du contrôle qualité sur les données, questions éthiques soulevées par la collecte de ces données (consentement de 
+patients), etc.
+* **description** du jeu de données : nature ou type de données, format ainsi que version du format le cas échéant, volume de données, date de publication des données dans l’entrepôt choisi par l’auteur ou préconisé par l’éditeur, identifiant des données (attribué par l’entrepôt), lien pérenne versl’entrepôt choisi, licence d’utilisation attribuée aux données.
+L’article regroupe donc un texte spécifique à la description des données, ainsi qu’un lien vers le jeu de données décrit, dans l’entrepôt où celui-ci a été déposé.
+
+&amp;nbsp;
+
+&lt;small&gt;Source : Reymonet, Nathalie. 2017. « Améliorer l’exposition des données de la recherche : la publication de data papers » https://archivesic.ccsd.cnrs.fr/sic_01427978/document.&lt;/small&gt;
+
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Deux exemples de data papers
+
+* Leach TH, Winslow LA, Acker FW, Bloomfield JA, Boylen CW, Bukaveckas PA, et al. Long-term dataset on aquatic responses to concurrent climate change and recovery from acidification. Scientific Data [Internet]. 2018 [cité 28 mars 2019];5. Disponible sur: https://www.nature.com/articles/sdata201859
+* Susini, Vanessa, Laura Caponi, Veronica Lucia Rossi, Antonio Sanesi, Nadia Romiti, Aldo Paolicchi, et Maria Franzini. « Data about Performances of Whole and Monovalent Half-Fragments Antibodies in Immunosorbent Assays ». Data in Brief 35 (avril 2021): 106778. https://doi.org/10.1016/j.dib.2021.106778. 
+
+
+---
+
+class: middle
+
+# Quelques exemples de data journals
+
+* [Biomedical Data Journal](http://biomed-data.eu/) (Biomédical)
+* [Journal of Open Health Data](https://openhealthdata.metajnl.com/) (Données de santé)
+* [Gigascience](https://academic.oup.com/gigascience) (Sciences de la vie)
+* [Scientific Data](https://www.nature.com/sdata/) (Multidisciplinaire)
+* [Data in Brief](https://www.journals.elsevier.com/data-in-brief/) (Multidisciplinaire)
+
+### Voir aussi : 
+CIRAD. Rédiger et publier un data paper dans une revue scientifique. https://coop-ist.cirad.fr/gerer-des-donnees/rediger-un-data-paper/1-qu-est-ce-qu-un-data-paper
+
+
+---
+
+class: center, inverse, middle
+
+# 4. Vos retours d'expérience
+
+---
+
+class: center, inverse, middle
+
+# 5. Le PGD : guide de rédaction
+
+
+---
+
+class: center, middle
+
+# Quelques conseils de rédaction à partir des questions les plus fréquemment posées
+
+
+---
+
+class: center, middle
+background-color: #7a6666
+
+# Description et documentation
+
+---
+
+class: middle
+
+# Documenter ses données
+
+Le contenu minimal de la documentation d'un jeu de données devrait comprendre : 
+* description du projet de recherche
+* objectifs du projet
+* hypothèses
+* informations détaillées sur la collecte de données
+* procédures employées pour le nettoyage et le traitement des données
+* logiciels utilisés, versions, systèmes d'exploitation
+* descriptif de la structuration des données et relations les unes avec les autres
+* informations sur les différentes versions (git est votre ami !)
+* modalités d'accès et de réutilisation
+
+&amp;nbsp;
+
+Ces informations figureront dans le PGD, mais il peut être utile de les documenter en amont pour avoir de bonnes pratiques de gestion. 
+
+---
+
+# Documenter ses données : un guide
+
+Un guide : Arnould, Pierre-Yves, et Marie-Christine Jacquemot-Perbal. 2017. 
+« Guide de bonnes pratiques: gestion et valorisation des données de recherche ». OTELO.
+https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-1 
+
+.center[
+&lt;img src="img/arnould.png" width="250" height="350" /&gt;
+]
+
+
+---
+
+class: middle
+
+# Documenter ses données : outils
+
+[Open Science Framework](https://osf.io/)
+* Wiki: documenter son projet, etc
+* Collaborators: ajouts de collaborateurs, rôles différencier
+* Composants : possiblité d'organiser l'espace en sous projets
+* Contrôle de version: upload files of the same name &amp; OSF will trackyour versions!
+* DOI !
+
+&amp;nbsp;
+
+[Jupyter Notebooks](https://jupyter.org/try)
+* Éditeur de code
+* Carnet de recherche
+
+&amp;nbsp;
+
+Plus modestement, cette formation : projet déposé sur Zenodo avec le support, le matériel et la documentation pour qu'elle puisse réutilisable. 
+
+---
+
+# Formats de fichiers
+
+* Lorsque c'est possible, privilégier les formats ouverts. 
+* Si un format propriétaire est utilisé par toute la communauté disciplinaire, conservez-le et précisez-le dans le DMP.
+
+| Format de fichier déconseillé | Format privilégié |
+| --- | --- |
+| Excel (.xls, .xlsx) | Comma separated values (.csv) |
+| Word (.doc, .docx) | Texte ascii (.txt) ou PDF/A si formatage |
+| Powerpoint (.pptx) | PDF/A (.pdf) |
+| Photoshop (.psd) | TIFF (.tif, .tiff) | 
+| Quicktime (.mov) | MPEG-4 (.mp4) |
+
+&amp;nbsp;
+
+&lt;small&gt;Voir : Rivet, Alain, Marie-Laure Bachèlerie, Auriane Denis-Meyere, et Delphine Tisserand. 2018. « Traçabilité des activités de recherche et gestion des connaissances : Guide pratique de mise en place ». http://qualite-en-recherche.cnrs.fr/IMG/pdf/guide_tracabilite_activites_recherche_gestion_connaissances.pdf&lt;/small&gt;
+
+
+---
+
+# Nommage des fichiers
+
+.pull-left[
+#### Classement thématique 
+* par sujet : 
+  - sujet_type_date_version.extension
+  - reunion_CR_20200227_V01.docx
+* par typologie de document :
+  - type_sujet_date_version.extension
+  - CR_reunion_20200227_V01.docx
+
+#### Classement chronologique
+* par sujet : 
+  - date_sujet_type_version.extension
+  - 20200227_reunion_CR_V0.1.docx
+* par type de document :
+  - date_type_sujet_version.extension
+  - 20200227_CR_reunion_V0.1.docx
+]
+  
+.pull-right[
+#### Principes
+* Pas plus de 32 caractères, moins si possible
+* Pas d'espaces, pas de caractères spéciaux
+
+&amp;nbsp;
+  
+&lt;small&gt;Voir : AAF, Section Archives communales et intercommunales. 2014. « Fiche pratique n°2 Nommer les dossiers et fichiers numériques ». http://archives.hautesavoie.fr/download.cgi?filename=accounts/mnesys_cg74/datas/cms/fp2_nommage.pdf.&lt;/small&gt;
+]
+
+
+---
+
+# Un exemple d’organisation de jeux de données de projet
+
+.pull-left[
+Colomb, Julien, Thorsten Arendt, Deepti Mittal, et Keisuke Sehara. 2020. « Folder Structure Template for Research Repositories ». https://doi.org/10.5281/zenodo.4410128 
+]
+
+.pull-right[
+&lt;img src="img/structure_template.png" width="200" height="800" /&gt;
+]
+
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Description et collecte, organisation et nommage : quelques exemples
+
+* Cavalier, Jean-François. “LipInTB Plan de Gestion de Données,” 2019. https://dmp.opidor.fr/plans/4624/export.pdf p. 3 
+* Lumley, Emily. “CompBioMed D3.1_Data Management Plan_v1.0,” 2020, 12. https://www.compbiomed.eu/wp-content/uploads/2017/03/D1.3_DataManagementPlan_CBK_v1.3.pdf p. 6-7
+* Aventurier, Pascal. « Bridge Research through Interoperable Data Governance and Environments : data management plan », 2020. https://dmp.opidor.fr/plans/5954/export.pdf p. 3-5
+* Doran, Michelle. “D1.2 ORDP: KPLEX - Open Research Data Pilot – 2018-01-31.” Research Report. Trinity College Dublin, March 2018. https://hal.archives-ouvertes.fr/hal-01842371. p. 6-8
+
+
+---
+
+# Documentation et qualité
+
+Des données non documentées ne sont pas réutilisables...
+
+.center[
+&lt;img src="img/jeusansdoc.png" width="700" height="400" /&gt;
+]
+
+
+---
+
+class: middle
+
+# Métadonnées
+
+* Un standard générique, le dublin core : 15 champs
+  * parfois associé à des standards disciplinaires : DDI (SHS), EML (écologie), DwC (Darwin Core, biodiversité)
+  * souvent **transparent lors du dépôt**, champs à remplir sur les formulaires des entrepôts.
+
+* Répertoire de standards disciplinaires : 
+  * DCC. Disciplinary metadata. http://www.dcc.ac.uk/resources/metadata-standards 
+  
+* Générer ses propres métadonnées : https://doranum.fr/wp-content/uploads/datacite_metadata_generator_4.0.html 
+
+
+---
+
+# Métadonnées pour les codes et logiciels 
+
+* Projet [CodeMeta](https://codemeta.github.io/create/)
+  * Fichier de métadonnées en json 
+  * Un [générateur](https://codemeta.github.io/codemeta-generator/) en ligne
+
+&lt;img src="img/codemeta.png" width="800" height="400" /&gt;
+
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Métadonnées - exemple
+
+[Créer un fichier de métadonnées](https://nsteffel.github.io/dublin_core_generator/generator.html) simple en Dublin Core
+
+---
+
+class: middle
+
+# Mots-clés, vocabulaires
+
+* Indispensable pour décrire le jeu de données et augmenter sa visibilité dans les moteurs de recherche
+  * Exemples : Agrovoc (agriculture), CIDOC CRM (patrimoine culturel), AsCoPain-T (agriculture), SNOMED (biomédical), etc.
+
+* Rechercher des vocabulaires : 
+  * BARTOC https://bartoc.org/ 
+  * FAIRsharing : https://fairsharing.org/standards/ 
+
+
+&lt;img src="img/keywords.png" width="600" height="100" /&gt;
+
+
+---
+
+# Fichiers Readme
+
+* Documenter le dépôt
+  * présente les règles de nommage et d'organisation du jeu de données, 
+décrit le contenu, 
+  * précise les logiciels ou codes informatiques nécessaires pour l’utilisation
+
+* Trames de fichiers Readme :
+  * 4TU. Guidelines for creating a README file. 
+  * https://researchdata.4tu.nl/fileadmin/user_upload/Documenten/Guidelines_for_creating_a_README_file.pdf 
+  * Doranum. Gabarit « Readme ».
+  * https://doranum.fr/wp-content/uploads/gabarit_readme.txt 
+
+&amp;nbsp;
+
+Gallagher, Sean. 2019. « Researchers find bug in Python script may have affected hundreds of studies ». Ars Technica. 15 octobre 2019. https://arstechnica.com/information-technology/2019/10/chemists-discover-cross-platform-python-scripts-not-so-cross-platform/.
+
+---
+
+class: middle
+
+# Et le cahier de labo ? 
+
+* Le cahier de labo est mentionné dans la plupart des modèles de PGD, dont celui de l’ANR.
+* Il n'est pas à partager, mais doit rester accessible.
+
+* **A conserver !**
+  * AAF. 2012. « Référentiel de gestion des archives de la recherche »https://www.archivistes.org/IMG/pdf/referentiel_recherche_intro_septembre2012_corrige_.pdf 
+
+
+---
+
+class: middle
+
+# Le contrôle qualité
+
+.pull-left[
+* Garantir la traçabilité
+* Un guide : 
+  * Rivet, Alain, Marie-Laure Bachèlerie, Auriane Denis-Meyere, et Delphine Tisserand. 2018. 
+« Traçabilité des activités de recherche et gestion des connaissances : Guide pratique de mise en place ». 
+http://qualite-en-recherche.cnrs.fr/IMG/pdf/guide_tracabilite_activites_recherche_gestion_connaissances.pdf 
+]
+
+.pull-right[
+&lt;img src="img/rivet.png" width="250" height="350" /&gt;
+]
+
+
+---
+
+class: center, middle
+background-color: #7a6666
+
+# Stockage
+
+---
+
+# Stocker pendant le projet 
+
+* Conserver plusieurs copies de ses données sur différents lieux de stockage. Règle de la **sauvegarde 3-2-1 : 3 copies sur 2 supports différents, avec au moins 1 une copie à distance**
+* Privilégier des systèmes de stockage robustes, avec **sauvegarde automatique**, tels que ceux fournis par les services informatiques de l’institution d’origine
+* Gérer les accès aux données : **accès sécurisés** pour les partenaires, vérification des accès en fin de projet ou en cas de départ d’une personne
+* **Chiffrer** les données si elles ont un caractère sensible
+* Utiliser un **cloud sécurisé** pour les accès distants
+
+.center[
+&lt;img src="img/stockage.png" width="450" height="250" /&gt;
+]
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Sécurité et sauvegarde : un exemple 
+
+Brau, Frédéric. « Base de données d’images en sciences de la vie d’Université Côte d’Azur : data management plan », 2020. 
+[LIEN A FAIRE]
+
+
+---
+
+class: center, middle
+background-color: #7a6666
+
+# Données personnelles, éthique
+
+
+---
+
+class: middle
+
+# Obligations liées au RGPD
+
+* Université Paris Lumières. 2019. « Fiches pratiques sur le Règlement Général pour la Protection des Données ». https://www.parisnanterre.fr/dpd-guide-rgpd-943295.kjsp?RH=1557908685504
+* **Sciences humaines**
+  * InSHS. 2021. « Les sciences humaines et sociales et la protection des données à caractère personnel dans le contexte de la science ouverte : guide pour la recherche - v2 ». Exemples de fiches p. 30 &amp; sq. https://www.inshs.cnrs.fr/sites/institut_inshs/files/pdf/Guide_rgpd_2021.pdf
+* **Santé**
+  * CNIL. 2018. « Recherche médicale : quel est le cadre légal ? » 2018. https://www.cnil.fr/en/node/24981 
+
+---
+
+class: middle
+
+# Les bases légales du RGPD
+
+Il est permis de traiter des données personnelles lorsque le traitement repose sur une des 6 bases légales mentionnées à l’article 6 du RGPD :  
+
+* le **consentement** : la personne a consenti au traitement de ses données ;
+* le contrat : le traitement est nécessaire à l’exécution ou à la préparation d’un contrat avec la personne concernée ;
+* l’obligation légale : le traitement est imposé par des textes légaux ;
+* la **mission d’intérêt public** : le traitement est nécessaire à l’exécution d’une mission d’intérêt public ;
+* l’intérêt légitime : le traitement est nécessaire à la poursuite d’intérêts légitimes de l’organisme qui traite les données ou d’un tiers, dans le strict respect des droits et intérêts des personnes dont les données sont traitées ;
+* la sauvegarde des intérêts vitaux : le traitement est nécessaire à la sauvegarde des intérêts vitaux de la personne concernée, ou d’un tiers.
+
+&amp;nbsp;
+
+&lt;small&gt;Source : CNIL. CC-BY-ND 3.0 FR. https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales&lt;/small&gt;
+
+---
+
+class: middle
+
+# Principes du RGPD
+
+Les 5 grands principes des règles de protection des données personnelles sont les suivants :
+* Le principe de **finalité** : le responsable d'un fichier ne peut enregistrer et utiliser des informations sur des personnes physiques que dans un but bien précis, légal et légitime ;
+* Le principe de **proportionnalité et de pertinence** : les informations enregistrées doivent être pertinentes et strictement nécessaires au regard de la finalité du fichier ;
+* Le principe d'une **durée de conservation limitée** : il n'est pas possible de conserver des informations sur des personnes physiques dans un fichier pour une durée indéfinie. Une durée de conservation précise doit être fixée, en fonction du type d'information enregistrée et de la finalité du fichier ;
+* Le principe de **sécurité et de confidentialité** : le responsable du fichier doit garantir la sécurité et la confidentialité des informations qu'il détient. Il doit en particulier veiller à ce que seules les personnes autorisées aient accès à ces informations ;
+* Les **droits des personnes**
+
+&amp;nbsp;
+
+&lt;small&gt;Source : CNIL. CC-BY-ND 3.0 FR. https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees&lt;/small&gt;
+
+---
+
+class: middle
+
+# Travailler avec son délégué à la protection des données
+
+* Fonction obligatoire : une personne nommée par établissement
+* Les "**traitements**" de données personnelles sont à déclarer
+* Le détenteur de données personnelles doit remplir une **fiche de registre d'activité** :
+  * Nom des responsables du traitement
+  * Coordonnées du sous-traitant (si nécessaire)
+  * **Population concernée**
+  * **Finalité** de traitement
+  * Énumération des tâches effectuées pour le traitement
+  * Informations communiquées aux personnes concernées
+  * Échanges de données (si nécessaire)
+
+&amp;nbsp;
+
+&lt;small&gt;Source : Doranum. CC:BY. https://doranum.fr/aspects-juridiques-ethiques/protection-des-donnees-personnelles-et-rgpd-dans-la-recherche-consequences-obligations-implications/&lt;/small&gt;
+
+---
+
+# Anonymiser ou pseudonymiser - 1
+
+Deux procédures différentes :
+* 👻   **Anonymisation** : il devient impossible de réidentifier les personnes (et on sort du cadre du RGPD), la procédure est irréversible.
+* 👾   **Pseudonymisation** : on utlise des données des données indirectement identifiantes (alias, numéro séquentiel, etc.).
+
+.center[
+&lt;img src="img/anonymisation.png" width="700" height="250" /&gt;
+]
+
+&lt;small&gt;Source : Blumer, Eliane, Samath, Sitthida, Varrato, Francesco, &amp; Borel, Alain. (2020, April 28). Optimizing your research data management. Zenodo. https://doi.org/10.5281/zenodo.3773657&lt;/small&gt;
+
+---
+
+class: middle
+
+# Anonymiser ou pseudonymiser - 2
+
+Deux outils, non testés, pour anonymiser : 
+* ARX https://arx.deidentifier.org/ 
+* Amnesia https://amnesia.openaire.eu/ 
+
+&lt;img src="img/ark-amnesia.png" width="150" height="50" /&gt;
+
+&lt;small&gt;Source : « L’anonymisation de données personnelles | CNIL ». s. d. Consulté le 26 septembre 2021. https://www.cnil.fr/fr/lanonymisation-de-donnees-personnelles.&lt;/small&gt;
+
+
+---
+
+class: middle
+
+# Éthique
+
+* **Codes d’éthique ou de déontologie de la discipline**
+* En France, **« Charte nationale de déontologie des métiers de la recherche »**. 2015. https://cache.media.enseignementsup-recherche.gouv.fr/file/Enseignement_superieur/47/6/charte_nationale_deontologie_metiers_de_la_R_915476.pdf 
+Signée par le CNRS, l’INSERM et la CPU
+* En Europe, ALLEA. 2017. **« The European Code of Conduct for Research Integrity »**. 2017. https://allea.org/wp-content/uploads/2017/05/ALLEA-European-Code-of-Conduct-for-Research-Integrity-2017.pdf 
+
+
+---
+
+class: center, middle
+background-color: #7a6666
+
+# Partage et archivage
+
+---
+
+# Ouvrir ses données ou non ? 
+
+.pull-left[
+&lt;img src="img/arbre_licences_2.png" width="250" height="400" /&gt;
+]
+
+.pull-right[
+* Penser à la potentielle valorisation des données
+* *TTO : bureau du transfert de technologie*
+
+&amp;nbsp;
+
+&lt;small&gt;Source : Data publication decision tree. 2017. https://infoscience.epfl.ch/record/230281.&lt;/small&gt;
+]
+
+---
+
+# Ouvrir les données : les licences ouvertes
+
+.pull-left[
+* Œuvres : 
+  * [Creative Commons](https://creativecommons.org/licenses/?lang=fr-FR)
+  * [Licence ouverte française](https://www.etalab.gouv.fr/licence-ouverte-open-licence), dite Etalab
+
+* Logiciels et bases de données
+  * Bases de données : [Licences de l’Open Knowledge Foundation](https://opendatacommons.org/licenses/index.html), PDDL, ODC-By, ODC-ODbL 
+  * Logiciels : licences [GNU](https://www.gnu.org/licenses/license-list.html)
+
+* Un outil pour trouver une licence publique :
+https://ufal.github.io/public-license-selector/ 
+]
+
+.pull-right[
+&lt;img src="img/cc.png" width="350" height="250" /&gt;
+]
+
+&amp;nbsp;
+
+&lt;small&gt;Source : FOSTER. Introduction to RDM concepts and tools / S. Venkataraman. 2018. https://www.fosteropenscience.eu/node/2514&lt;/small&gt; 
+
+
+---
+
+class: middle
+
+# Rechercher des entrepôts de données
+
+* Trouver des entrepôts par disciplines :
+  * [re3data](https://www.re3data.org/)
+  * [fairsharing](https://fairsharing.org/)
+* Entrepôts français : 
+  * [CAT OPIDoR](https://cat.opidor.fr/index.php/Entrep%C3%B4t_de_donn%C3%A9es)
+* Rechercher des jeux de données
+  * [Search DataCite](https://search.datacite.org/)
+  * [OpenAIRE](https://explore.openaire.eu/)
+
+
+---
+
+class: middle
+
+# Où et comment partager ses données ?
+
+* Entrepôt pluridisciplinaire (UE / CERN) : [Zenodo](https://zenodo.org/)
+* Entrepôts privés : [Figshare](https://figshare.com/), [GigaDB](GigaDB), [Mendeley data](https://data.mendeley.com/)
+* Entrepôts disciplinaires : [DRYAD](https://datadryad.org/stash), [Nakala](https://nakala.fr/), [Gbif](https://www.gbif.org/fr/)
+* Entrepôts d’établissements : [data INRAE](https://data.inrae.fr/) 
+
+
+---
+
+background-color: #bebebe
+class: middle
+
+# Déposer un jeu de données fictif
+
+Utilisez les versions de test des entrepôts Zenodo ou Dataverse
+* https://sandbox.zenodo.org/
+* https://demo.dataverse.org/
+
+---
+
+class: middle
+
+# Codes et logiciels : partage et archivage
+
+* Plateformes de développement collaboratif, “**forges logicielles**” : 
+  * GitHub, GitLab.com, BitBucket, instances de GitLab institutionnelles, etc.
+  * Finalité : développer un logiciel de façon collaborative
+  * Risques : **aucune garantie de pérennité** (nombreux exemples de fermetures brutales : Gitorious.org, Google Code, Bitbucket)
+  * Ne remplacent pas un archivage pérenne !
+
+* **Archives** :
+  * [Software Heritage](https://www.softwareheritage.org/?lang=fr)
+* Finalité : garantir une conservation et un accès pérennes
+* Enjeux : **garantir l’accès et la possibilité d’utiliser des codes et des logiciels de manière pérenne**
+* Constituer un **patrimoine informatique** 
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Partage : un exemple
+
+Aventurier, Pascal. « Bridge Research through Interoperable Data Governance and Environments : data management plan », 2020. https://dmp.opidor.fr/plans/5954/export.pdf p.7
+
+
+---
+
+class: middle
+
+# Archiver ses données
+
+* **Dès le début du projet :**
+  * Adopter des conventions pour nommer les dossiers et les fichiers
+  * Anticiper les éventuelles opérations d’anonymisation des données
+* **Pendant le projet :**
+  * Déterminer ce qui sera conservé ou non
+  * Faire le point sur la durée de conservation
+* **Après le projet :**
+  * Procéder au tri des jeux produits
+  * Prévoir l’archivage pérenne (intégrité et lisibilité des fichiers sur le long terme)
+  
+&amp;nbsp;
+
+Un guide : Association des Archivistes de France. « **Référentiel de gestion des archives de la recherche** ». https://www.archivistes.org/IMG/pdf/referentiel_recherche_intro_septembre2012_corrige_.pdf 
+
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Archivage : un exemple 
+
+Brau, Frédéric. « Base de données d’images en sciences de la vie d’Université Côte d’Azur : data management plan », 2020. P.5
+[LIEN A FAIRE]
+
+
+---
+
+class: middle
+
+# Les identifiants pérennes 
+
+* Le plus utilisé :
+  * **DOI** : identifiant pérenne, qui permet de retrouver l'emplacement d'un document en ligne si son URL a changé.
+  * Automatiquement généré lors du dépôt sur un entrepôt de données
+
+* Un service de fourniture de DOI à l’INIST, le service [PID OPIDoR](https://opidor.fr/identifier/), à destination des structures : 
+  * demander l’ouverture d’un compte auprès de DataCite ;
+  * attribuer des DOI à partir de votre compte ;
+  * bénéficier de services de contrôle et de traitement en nombre des DOI. 
+
+* Autres identifiants pérennes :
+  * **Handle system** : permet d’attribuer des identifiants pérennes à des objets numériques
+  * **ARK** : identifiant pérenne pour des objets numériques et physiques, très utilisé par les bibliothèques. 
+
+
+---
+
+class: center, middle
+background-color: #7a6666
+
+# Responsabilités et coûts
+
+---
+
+class: middle
+
+# Responsabilité de la gestion des données
+
+* Le **responsable du DMP** : pas forcément la responsable du projet.
+* Le DMP est un **livrable**, qui **évolue** au fil du projet :
+  * V1 attendue 6 mois après la contractualisation,
+  * V2 à mi-projet,
+  * Version supplémentaire à chaque étape importante (facultative),
+  * V3 en fin de projet.
+
+---
+
+class:middle
+
+# Coûts
+
+* Outils et checklists pour chiffrer les coûts de stockage et d’archivage des données :
+  * RDM costs. OpenAIRE. https://www.openaire.eu/how-to-comply-to-h2020-mandates-rdm-costs 
+  * UK Data Service - Data management costing tool and checklist https://www.ukdataservice.ac.uk/media/622368/costingtool.pdf 
+  * EPFL Library Cost Calculator for Data Management https://costcalc.epfl.ch/
+  * Utrecht University Cost of data management https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management 
+* Les coûts de gestion des données, qu'il s'agisse de ressources humaines ou matérielles, sont éligibles dans le cadre d'un financement de projet. 
+
+
+---
+
+class: middle
+
+.pull-left[
+# A qui s'adresser 
+]
+
+.pull-right[
+&lt;img src="img/men.png" width="68" height="68" /&gt;
+]
+
+* **Rédaction du DMP, partage des données** : bibliothécaires, professionnels IST
+* **Exigences du financeur, coûts éligibles, valorisation** : direction de la recherche
+* **Données personnelles** : DPD
+* **Questions juridiques** : services des affaires juridiques
+* **Éthique** : référent de l'établissement, en santé comités de protection des personnes (recherche biomédicale notamment)
+* **Protection du potentiel scientifique et technique et de l’innovation** : SATT
+* **Informatique** : DSI
+* **Sécurité, défense** : RSSI, fonctionnaire de sécurité de défense
+* **Archivage pérenne** : archivistes
+
+---
+
+class: middle
+
+# Evaluer ses PGD
+
+* Ancelin-Fabre, Justine. s. d. « Grille_evaluation_H2020_fr.docx ». Google Docs. Consulté le 20 janvier 2021a. https://drive.google.com/file/d/17kjkq-OEwBre2Z8U7fvwILzlGbaGmlwf/view?usp=sharing&amp;usp=embed_facebook.
+* Ancelin-Fabre, Justine. s. d. « Grille_relecture_PGD_ANR.docx ». Google Docs. Consulté le 20 janvier 2021b. https://drive.google.com/file/d/1A7LHW_y1vHmbHxYmmjECpKgmOsicjA01/view?usp=sharing&amp;usp=embed_facebook.
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Quelques exemples de PGD - 1
+
+## Trouver des PGD publics 
+* Sur DMP OPIDoR : https://dmp.opidor.fr/public_plans 
+* DMP Online : https://dmponline.dcc.ac.uk/public_plans 
+* Sur Zenodo, en recherchant Data management plan
+
+---
+
+background-color: #bebebe
+
+# Quelques exemples de PGD - 2
+
+* Un PGD publié sous forme d’article de revue (PhD) https://riojournal.com/articles.php?id=10600
+* Un PGD rédigé dans un tableau https://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/0185_130901_David-Cooper_Trevor-Jones_DMP_Application-Stage.pdf
+* Un PGD très court (4 pages, v1, ERC) https://cordis.europa.eu/project/id/833438/fr 
+* Un PGD très long intégrant figures et tableaux (30 pages, H2020) https://ec.europa.eu/futurium/sites/futurium/files/d1.3_692819_data_management_plan_v1.pdf
+* Un PGD encore plus long (54 pages ! H2020), avec des annexes http://www.drive2thefuture.eu/wp-content/uploads/2019/11/D9.4_Data-Management-Plan.pdf 
+* Un PGD avec une stratégie de sauvegarde très détaillée (PhD) https://www.wur.nl/upload_mm/4/a/9/ff641753-3b34-44c6-a82e-d6df6b02959d_Data_Management_Plan_Beatrice_Ramirez_Wordconversion.pdf 
+* Un PGD qui met l’accent sur les aspects éthiques et juridiques (H2020) https://inspiresproject.com/wp-content/uploads/2018/03/D8.1_v02_FINAL-VERSION.pdf
+
+&amp;nbsp;
+
+&lt;small&gt;Source : Ancelin-Fabre, Justine. 2021. « Rédiger un plan de gestion pour ses données de recherche ». https://urfist.chartes.psl.eu/sites/default/files/docs/20210601_ancelin-fabre_pgd.pdf.&lt;/small&gt;
+
+---
+
+class: middle
+background-color: #bebebe
+
+# Exercice : analyser un PGD
+
+*Choisissez un PGD dans les listes ci-dessus, présentez-le au groupe et relevez ses points forts et faibles à l'aide des grilles d'évaluation*
+
+15 minutes en binôme
+
+---
+
+class: center, inverse, middle
+
+# 6. DMP OPIDoR, un outil d'aide à la rédaction
+
+
+---
+
+class: middle
+
+# Pourquoi DMP OPIDoR ?
+
+.pull-left[
+* Développé et maintenu par l'INIST
+* Gratuit
+* Facilite le **travail collaboratif**
+* Centralise **plusieurs modèles**
+* Permet l'affichage de **recommandations**
+* Propose une service d'**assistance** 
+* Exporte des documents rédigés dans divers formats
+]
+
+.pull-right[
+&lt;img src="img/dmpopidor.png" width="600" height="200" /&gt;
+]
+
+
+---
+
+class: center, middle
+background-color: #bebebe
+
+# Prise en main de DMP OPIDoR
+## Un peu de pratique !
+
+&lt;!-- voir support JAF, 71 &amp; sq --&gt;
+
+
+---
+
+class: center, middle, inverse
+
+# Quelques lectures
+
+---
+
+class: middle
+
+# Références sur les données
+
+* Borgman, Christine L. 2016. Big Data, Little Data, No Data : Scholarship in the Networked World. Cambridge, Massachusetts; London: MIT Press.
+* Borgman, Christine L. 2020. Qu’est-ce que le travail scientifique des données ? : Big data, little data, no data. Traduit par Charlotte Matoussowsky. Qu’est-ce que le travail scientifique des données ? : Big data, little data, no data. Encyclopédie numérique. Marseille: OpenEdition Press. http://books.openedition.org/oep/14692.
+* Corti, Louise. 2019. Managing and sharing research data: a guide to good practice. 2nd edition. Thousand Oaks, CA: SAGE Publications.
+* Leonelli, Sabina. 2019. La recherche scientifique à l’ère des big data: cinq façons dont les big data nuisent à la science et comment la sauver. Mimésis.
+
+
+---
+
+class: center, middle, inverse
+
+# Des questions, des commentaires sur cette journée ?
+
+---
+
+class: center, inverse, middle
+
+# Merci de votre attention !
+
+Cécile Arènes  &lt;a href="https://orcid.org/0000-0002-1839-3530"&gt;&lt;img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /&gt;&lt;/a&gt;, [cecile.arenes@sorbonne-universite.fr](mailto:cecile.arenes@sorbonne-universite.fr) et [@carenes](https://twitter.com/carenes)
+
+Retrouvez et réutilisez cette présentation sur 
+[zenodo](à ajouter).
+
+
+&lt;img src="img/ccby.png" width="150" height="50" /&gt;
+
+Slides : R package [xaringan](https://github.com/yihui/xaringan),  [remark.js](https://remarkjs.com), [knitr](https://yihui.org/knitr/) et [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
