@@ -627,9 +627,19 @@ https://doi.org/10.3233/ISU-170824
 background-color: #bebebe
 class: middle
 
+# Et vos données ?
+
+Quelles sont vos pratiques ?
+
+
+---
+
+background-color: #bebebe
+class: middle
+
 # Pourquoi décrire et documenter des jeux de données ? - 1
 
-## Exercice 1
+## Exercice
 
 *Voici des jeux de données déposés sur Zenodo. Lesquels êtes-vous en mesure de décrire ? Lesquels pourriez-vous réutiliser ?*
 
@@ -642,8 +652,6 @@ background-color: #bebebe
 class: middle
 
 # Pourquoi décrire et documenter des jeux de données ? - 2
-
-## Exercice 1 - suite
 
 Trois jeux particulièrement contrastés
 
@@ -699,7 +707,7 @@ class: middle
 # Quand rédiger son plan de gestion des données ?
 
 * Collecter des éléments **au plus tôt !**
-* Dans les appels européens, la science ouverte devient un critère d'excellence, vous devrez témoigner de **bonnes pratiques**.
+* Dans les appels européens, la science ouverte devient un **critère d'excellence**, vous devrez témoigner de **bonnes pratiques**.
 
 
 ---
@@ -853,15 +861,18 @@ Informations générales
 class: middle
 background-color: #bebebe
 
-# Le modèle de l'ANR - un exemple
+# Le modèle de l'ANR - exemples
 
 LipInTB / Jean-François Cavalier. 2021. https://dmp.opidor.fr/plans/4624/export.pdf
 
 &nbsp;
 
-**Exercice** : lisez ce PGD au regard des questions du modèle de l'ANR, qu'en pensez vous ?
-https://anr.fr/fileadmin/documents/2019/ANR-modele-PGD.pdf 
+Ou : https://dmp.opidor.fr/public_plans
 
+&nbsp;
+
+**Exercice** : choisissez et lisez ce PGD au regard des questions du modèle de l'ANR, qu'en pensez vous ?
+https://anr.fr/fileadmin/documents/2019/ANR-modele-PGD.pdf 
 
 
 ---
@@ -933,7 +944,8 @@ class: middle
 ### 2.2.	Making data **accessible** : **Metadata**
   * Will **metadata** be made openly available and licenced under a public domain dedication **CC0**, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?
   * How long will the data remain **available and findable**? Will metadata be guaranteed to remain available after data is no longer available?
-  * Will **documentation or reference** about any software be needed to access or read the data be included? Will it be possible to include the relevant software (e.g. in open source code)?
+  * Will **documentation or reference** about any software be needed to access or read the data be included? 
+  * Will it be possible to include the **relevant software** (e.g. in open source code)?
 
 
 ---
@@ -1078,9 +1090,9 @@ background-color: #bebebe
 
 # Comparez les modèles de PGD
 
-## Exercice 2
+## Exercice
 
-*Sur le site DMP OPIDoR, choisissez trois [modèles](https://dmp.opidor.fr/public_templates) de PGD et observez leurs différences. Lesquels vous paraissent aisés à utiliser, pourquoi ? Certains vous semblent-ils particulièrement complexes, pourquoi ?*
+*Sur le site DMP OPIDoR, choisissez deux [modèles](https://dmp.opidor.fr/public_templates) de PGD et observez leurs différences. Lesquels vous paraissent aisés à utiliser, pourquoi ? Certains vous semblent-ils particulièrement complexes, pourquoi ?*
 
 
 ---
@@ -1108,11 +1120,20 @@ class: middle
 
 # Les MaDMP 
 
-* Vers des DMP actionnables par des machines
+* Vers des **DMP actionnables par des machines**
 * Exemple d’[Argos](https://argos.openaire.eu/) d’OpenAIRE : outil d’aide à la rédaction de MaDMP
 * Un MaDMP en préparation pour DMP OPIDoR
 * Voir les travaux du groupe RDA : [DMP Common Standards WG](https://www.rd-alliance.org/group/dmp-common-standards-wg/outcomes/rda-dmp-common-standard-machine-actionable-data-management)
 
+
+---
+
+background-color: #bebebe
+class: middle
+
+# Démonstration d'un MaDMP : ARGOS
+
+https://argos.openaire.eu/
 
 ---
 
@@ -1186,7 +1207,7 @@ CIRAD. Rédiger et publier un data paper dans une revue scientifique. https://co
 
 class: center, inverse, middle
 
-# 4. Vos retours d'expérience
+# 4. Vos retours d'expérience sur les PGD
 
 ---
 
@@ -1228,7 +1249,7 @@ Le contenu minimal de la documentation d'un jeu de données devrait comprendre :
 
 &nbsp;
 
-Ces informations figureront dans le PGD, mais il peut être utile de les documenter en amont pour avoir de bonnes pratiques de gestion. 
+Ces informations figureront dans le PGD, mais il est indispensable de les documenter en amont pour avoir de bonnes pratiques de gestion. 
 
 ---
 
@@ -1251,6 +1272,8 @@ class: middle
 
 # Documenter ses données : outils
 
+## Deux exemples
+
 [Open Science Framework](https://osf.io/)
 * Wiki: documenter son projet, etc
 * Collaborators: ajouts de collaborateurs, rôles différencier
@@ -1266,7 +1289,6 @@ class: middle
 
 &nbsp;
 
-Plus modestement, cette formation : projet déposé sur Zenodo avec le support, le matériel et la documentation pour qu'elle puisse réutilisable. 
 
 ---
 
@@ -1995,7 +2017,7 @@ background-color: #bebebe
 
 # Exercice de rédaction
 
-Commencez à rédiger votre trame de PGD. Des exemples fictifs de projets sont à votre disposition. 
+Commencez à rédiger votre trame de PGD, en vous aidant si vous le souhaitez de DMP OPIDoR ou d'ARGOS. Des exemples fictifs de projets sont à votre disposition. 
 
 https://github.com/carenes/urfist_bdx_DMP/tree/master/materiel
 
