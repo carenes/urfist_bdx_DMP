@@ -4,6 +4,8 @@ Version : **Septembre 2021**
 
 DOI: à venir
 
+LICENCE : CC:BY 4.0
+
 ## Contenu du dépôt
 
 1. Readme: readme.Rmd
@@ -38,7 +40,7 @@ Les activités ont été réalisées en groupe par les participants.
   
   - **2 pauses** (1 matin, 1 après-midi)
   
-  - **1 pause déjeuner **
+  - **1 pause déjeuner**
 
 - Evaluation du stage : **Oui**
 
@@ -47,7 +49,7 @@ Les activités ont été réalisées en groupe par les participants.
 
 ## Auteurs et formateurs
 
-L'atelier a été conçu et animé par Cécile Arènes, les sources utilisées sont citées dans le support. 
+L'atelier a été conçu et animé par Cécile Arènes
 
 #### Contact
 
@@ -57,7 +59,7 @@ cecile.arenes@sorbonne-universite.fr
 
 Un Plan de Gestion des Données (PGD, aussi appelé DMP pour Data Management Plan), est un document plus ou moins formalisé qui décrit la façon dont les données liées à un projet de recherche vont être utilisées et manipulées en amont, pendant et à l’issue du projet.
 
-Avant tout outil interne d’aide à la conception d’un projet de recherche et à la définition de bonnes pratiques, il s’agit également d’une pièce à usage externe, dont la rédaction est exigée par de plus en plus de financeurs de la recherche. L’ANR (depuis 2018) et la Commission européenne (depuis 2017), entre autres, exigent ainsi des chercheurs qui soumettent une demande de financement qu’ils fournissent un plan de gestion détaillé des données de recherche qu’ils comptent utiliser. Ce document permet entre autres de déterminer avec précision quelles données de recherche pourront être mises à la disposition du plus grand nombre, dans un souci de transparence scientifique et de partage des savoirs.
+Avant tout outil d’aide à la gestion des données d’un projet de recherche et à la définition de bonnes pratiques, il s’agit également d’un livrable à usage externe, dont la rédaction est exigée par de nombreux financeurs de la recherche. L’ANR (depuis 2019) et la Commission européenne (depuis 2014), entre autres, exigent des chercheurs qui soumettent une demande de financement qu’ils fournissent un plan de gestion détaillé des données de recherche qu’ils comptent utiliser. Ce document témoigne de la bonne gestion des données au cours du projet et il permet de déterminer quelles données de recherche pourront être mises à la disposition du plus grand nombre, dans un souci de transparence scientifique et de partage des savoirs.
 
 Mais à quoi ressemble exactement un PGD ? Quelles sont les informations indispensables à y inscrire ? Existe-t-il des modèles ? Comment inscrire ce travail chronophage dans un projet de recherche et le valoriser ? Est-ce vraiment bien utile ?
 
@@ -99,19 +101,28 @@ Savoir utiliser un navigateur web. Cette formation est destinée aux personnes d
 
 Exposé, démonstration, travaux pratiques, échanges
 
-
-### Matériel
+### Logistique
 
 - Vidéo-projecteur : support de presentation
 - Activités : exercices à imprimer ou à faire en ligne si la salle est équipée
 
+## SOURCES
 
-## REUTILISATION DU MATERIEL
+Les images de ce dépôt sont créditées dans le support de formation.
 
-Ce matériel de formation est sous licence [Creative Commons Attribution  4.0 International License]([http://creativecommons.org/licenses/by-nc/4.0/](http://creativecommons.org/licenses/by/4.0/) (CC-BY-NC).
-Les retours d'expérience après réutilisation seront les bienvenus !
+Chaque sources utilisé est créditée dans le support ou dans les exercices. 
+
+
+## REUTILISATION DU MATERIEL DE FORMATION
+
+Ce matériel de formation est sous licence [Creative Commons Attribution  4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode) (CC:BY).
+
+Les retours d'expérience après réutilisation seront les bienvenus 😊
+
+---
 
 ## TEMPLATE
 
 Le modèle de ce fichier Readme est issu de :
-* Blumer, Eliane, Sitthida Samath, Francesco Varrato, et Alain Borel. 2020. « Optimizing Your Research Data Management ». avril 28. https://doi.org/10.5281/zenodo.3773657.
+
+Blumer, Eliane, Sitthida Samath, Francesco Varrato, et Alain Borel. 2020. « Optimizing Your Research Data Management ». avril 28. https://doi.org/10.5281/zenodo.3773657.
