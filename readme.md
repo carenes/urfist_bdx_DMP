@@ -2,7 +2,7 @@ Titre : **Rédiger un plan de gestion des données**
 
 Version : **Septembre 2021**
 
-DOI: à venir
+DOI: https://doi.org/10.5281/zenodo.5546562
 
 LICENCE : CC:BY 4.0
 
@@ -21,6 +21,8 @@ LICENCE : CC:BY 4.0
 - Exercice : création d'un PGD
 - Exercice : comparaison de jeux de données
 Les activités ont été réalisées en groupe par les participants.
+
+4. Fichiers du projet créé avec Rstudio, en particulier les slides : R package [xaringan](https://github.com/yihui/xaringan),  [remark.js](https://remarkjs.com), [knitr](https://yihui.org/knitr/) et [R Markdown](https://rmarkdown.rstudio.com).
 
 ## CONTEXTE
 
@@ -71,9 +73,11 @@ Avant tout outil d’aide à la gestion des données d’un projet de recherche 
 Mais à quoi ressemble exactement un PGD ? Quelles sont les informations indispensables à y inscrire ? Existe-t-il des modèles ? Comment inscrire ce travail chronophage dans un projet de recherche et le valoriser ? Est-ce vraiment bien utile ?
 
 Cette formation vise à présenter en détails le concept de « plan de gestion des données » et à expliciter en quoi ce document, qui peut apparaître à première vue comme un fardeau administratif supplémentaire, peut en réalité apporter de nouvelles pistes de réflexion dans la recherche. L’objectif de cette journée est de permettant aux producteurs de données de s’interroger sur les bonnes pratiques à adopter à toutes les étapes de leur projet, qu’il s’agisse d’un projet financé ou d’une thèse de doctorat.
+
 La formation sera également l’occasion de découvrir les nombreuses ressources et outils qui sont à la disposition des doctorants et des chercheurs pour faciliter leur rédaction, ainsi que les options qui s’offrent à eux pour valoriser ce travail. 
 
 À l’issue de la formation, le stagiaire sera capable de :
+
 1.	Donner une définition de ce qu’est un plan de gestion des données
 2.	Citer les questions auxquelles doit répondre un PGD
 3.	Discerner les cas dans lesquels la rédaction d’un PGD est obligatoire de ceux dans lesquels il n’est qu’utile
@@ -95,7 +99,7 @@ La formation sera également l’occasion de découvrir les nombreuses ressource
 
 ## PRÉ-REQUIS
 
-Savoir utiliser un navigateur web. Cette formation est destinée aux personnes déjà un peu familières du concept de données de la recherche, quel que soit leur degré d’avancement dans leurs travaux de recherche. N'hésitez pas à contacter l'Urfist de Bordeaux pour connaitre les formations découverte des données de la recherche disponibles.
+Savoir utiliser un navigateur web. Cette formation est destinée aux personnes déjà un peu familières du concept de données de la recherche, quel que soit leur degré d’avancement dans leurs travaux de recherche. 
 
 ## TYPE D'INTERVENTION
 
@@ -103,14 +107,14 @@ Exposé, démonstration, travaux pratiques, échanges
 
 ### Logistique
 
-- Vidéo-projecteur : support de presentation
+- Vidéo-projecteur : support de présentation
 - Activités : exercices à imprimer ou à faire en ligne si la salle est équipée
 
 ## SOURCES
 
 Les images de ce dépôt sont créditées dans le support de formation.
 
-Chaque sources utilisé est créditée dans le support ou dans les exercices. 
+Chaque sources utilisée est créditée dans le support ou dans les exercices. 
 
 
 ## REUTILISATION DU MATERIEL DE FORMATION
