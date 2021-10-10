@@ -1116,7 +1116,7 @@ https://doi.org/10.5281/zenodo.3664215
 # Tableau synoptique des modèles ANR et Horizon Europe
 
 .center[
-```{r echo=FALSE, out.height=400, out.width=800}
+```{r echo=FALSE, out.height=300, out.width=600}
 knitr::include_graphics("img/comparatifDMP.png")
 ```
 ]
